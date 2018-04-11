@@ -65,7 +65,14 @@ public class ProfileController extends Main {
 	@FXML
 	private void cancelProfile() throws IOException {
 		
-		Main.showMainItems();
+		if(null != Main.user) {
+			Main.regHome();
+		}
+		else
+		{
+			Main.showMainItems();
+		}
+
 	}
 	
 	
@@ -106,14 +113,7 @@ public class ProfileController extends Main {
 	
 	@FXML
 	private void create() throws IOException {
-		System.out.println(fname.getText());
-		System.out.println(lname.getText());
-		System.out.println(password.getText());
-		System.out.println(mobile.getText());
-		System.out.println(route.getValue());
-		System.out.println(startingPt.getValue());
-		System.out.println(mobile.getText().trim().length());
-
+		
 		
 		
 		ErrController.error = null;					//valid mobile number
