@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label text="Car Pooling" textFill="#f57429" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="80.0" />
+         </padding>
+         <font>
+            <Font name="Kristen ITC" size="30.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../image1/car3.jpg" />
+         </image>
+      </ImageView>
+   </left>
+   <right>
+      <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../image1/car3.jpg" />
+         </image>
+      </ImageView>
+   </right>
+</BorderPane>

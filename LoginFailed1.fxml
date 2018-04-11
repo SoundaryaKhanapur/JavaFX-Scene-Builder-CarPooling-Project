@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" style=" -fx-border-color:grey; -fx-border-width: 4; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carpooling.view.LoginSignupController">
+   <top>
+      <Label text="Login Failed..!" textAlignment="CENTER" textFill="#f42222" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="80.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Kristen ITC" size="22.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#home" prefHeight="31.0" prefWidth="67.0" text="Home" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="70.0" />
+         </BorderPane.margin>
+      </Button>
+   </center>
+</BorderPane>

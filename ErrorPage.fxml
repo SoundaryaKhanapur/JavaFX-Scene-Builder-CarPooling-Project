@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carpooling.view.ErrController">
+   <children>
+      <Label layoutX="283.0" layoutY="81.0" prefHeight="57.0" prefWidth="157.0" text="Oops...!! " textFill="#f21212e5">
+         <font>
+            <Font name="Kristen ITC" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="errMsg" alignment="CENTER" layoutX="126.0" layoutY="216.0" prefHeight="45.0" prefWidth="449.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="314.0" layoutY="315.0" mnemonicParsing="false" onAction="#home" text="Home" textFill="#dd2e3d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="285.0" layoutY="138.0" text="ERROR" textFill="#f82424">
+         <font>
+            <Font name="Kristen ITC" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

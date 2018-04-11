@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carpooling.view.HomeController">
+   <children>
+      <HBox layoutX="224.0" layoutY="7.0" prefHeight="100.0" prefWidth="271.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="245.0" text="Select Your Choice" textFill="#ed2478">
+               <font>
+                  <Font name="Kristen ITC" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Pane layoutY="100.0" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <Button layoutX="70.0" layoutY="53.0" mnemonicParsing="false" onAction="#register" text="Register" textFill="#9a5293">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="149.0" mnemonicParsing="false" onAction="#updateProfile" text="Update Profile" textFill="#9a5293">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="241.0" mnemonicParsing="false" onAction="#checkStatus" text="Check Status" textFill="#9a5293">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="357.0" layoutY="53.0" mnemonicParsing="false" onAction="#logoff" prefHeight="48.0" prefWidth="109.0" text="Log Off" textFill="#9a5293">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

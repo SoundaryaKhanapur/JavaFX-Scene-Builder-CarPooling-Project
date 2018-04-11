@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" style=" -fx-border-color:grey; -fx-border-width: 4; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carpooling.view.LoginSignupController">
+   <center>
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="BOTTOM_CENTER">
+        <tabs>
+          <Tab text="Login">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button defaultButton="true" layoutX="159.0" layoutY="188.0" mnemonicParsing="false" onAction="#login" text="Enter" />
+                        <TextField fx:id="username" layoutX="88.0" layoutY="34.0" prefHeight="31.0" prefWidth="197.0" promptText="UserName" style="-fx-background-radius: 10;" />
+                        <PasswordField fx:id="password" layoutX="87.0" layoutY="94.0" prefHeight="31.0" prefWidth="203.0" promptText="Password" style="-fx-background-radius: 10;" />
+                        <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="50.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../image1/lock.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="47.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../image1/logimg.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Signup">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="100.0" layoutY="41.0" prefHeight="79.0" prefWidth="324.0" AnchorPane.bottomAnchor="147.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="35.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="101.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="223.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="User Name" />
+                              <TextField fx:id="tmpname" style="-fx-background-radius: 10;" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="15.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                        <Button layoutX="48.0" layoutY="131.0" mnemonicParsing="false" onAction="#signup" text="Click Here" />
+                        <Label layoutX="156.0" layoutY="136.0" text="To check if username is available" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="136.0" />
+                        <Label layoutX="156.0" layoutY="136.0" text="To check if username is available" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>
